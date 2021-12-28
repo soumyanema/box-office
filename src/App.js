@@ -3,10 +3,20 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Show from "./pages/Show.jsx";
 import Starred from "./pages/Starred.jsx";
+import { ThemeProvider } from "styled-components";
+
+// App.js -> theme for styled components
+const theme = {
+  mainColors: {
+    blue: "#2400ff",
+    gray: "#c6c6c6",
+    dark: "#353535",
+  },
+};
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -21,7 +31,7 @@ function App() {
           <div>Page not found</div>
         </Route>
       </Switch>
-    </div>
+    </ThemeProvider>
   );
 }
 
