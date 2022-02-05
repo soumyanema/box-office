@@ -1,3 +1,3 @@
 # box-office
-## My first React based project
+## My first React project
 <a href="https://soumyanema.github.io/box-office/#/">Click here</a> to see it
